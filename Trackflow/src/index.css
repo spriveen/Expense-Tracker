@@ -7,3 +7,19 @@
   list-style: none;
   text-decoration: none;
 }
+
+:root{
+  --black-color:#000;
+  --white-color:#fff;
+  --text-color:#333;
+
+  --OpensSans:"Outfit", sans-serif;
+  --Edusahand: "Poppins", sans-serif;
+
+  --transition-regular:.3s;
+  --transition-slow:.6s;
+}
+body{
+  background-color: #111;
+  color: var(--white-color);
+}

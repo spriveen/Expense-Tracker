@@ -1,13 +1,10 @@
-import { useState } from 'react'
+import React from 'react'
 
-
-function App() {
-  
-
+const App = () => {
   return (
-   <>
-     yo
-   </>
+    <div>
+      Yo
+    </div>
   )
 }
 
