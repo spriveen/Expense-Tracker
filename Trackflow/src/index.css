@@ -46,3 +46,51 @@ body {
 .border-light-end{
   border-right: 1px solid #333 !important;
 }
+
+.trans-card-wrap{
+  height: 200px;
+  overflow-y: scroll;
+}
+.trans-card-wrap::-webkit-scrollbar{
+  width: 2px;
+  background-color: transparent;
+}
+.trans-card-wrap::-webkit-scrollbar-thumb{
+  background-color: rgba(196, 186,1886)!important;
+  border-radius: 10px !important;
+}
+.trans-card{
+  cursor: pointer;
+}
+
+.trans-card-hover .delete-card{
+  opacity: 1;
+  z-index:1;
+}
+.delete-card{
+  right: 50%;
+  opacity: 0;
+  z-index: -1;
+  transition: var(--transition-regular);
+}
+.input-box input{
+  background-color: transparent !important;
+  color: var(--white-color) !important;
+  outline: none !important;
+  box-shadow: none !important;
+
+  &::placeholder{
+    color: var(--white-color) !important;
+  }
+}
+
+.input-box input:active,
+.input-box input:focus{
+  border-color: #48ff0060 !important;
+}
+
+@media (max-width: 575px) {
+  .wrapper-box{
+    width: 100%;
+  }
+}
